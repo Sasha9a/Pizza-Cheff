@@ -1,0 +1,48 @@
+@import "primeflex/primeflex";
+
+.header-content-text {
+  font-size: 45px;
+  font-family: "MullerExtraBold", sans-serif;
+  color: rgb(185, 145, 80);
+  line-height: 1.222;
+}
+
+.header-content-text-1 {
+  font-size: 45px;
+  font-family: "MullerExtraBold", sans-serif;
+  color: #ffaf18;
+  line-height: 1.222;
+}
+
+.header-info-text {
+  font-size: 16px;
+  font-family: "MullerExtraBold", sans-serif;
+  color: rgb(255, 175, 24);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.text-info {
+  font-size: 16px;
+  font-family: "MullerRegular", sans-serif;
+  color: rgb(185, 145, 80);
+  line-height: 1;
+}
+
+.py-button {
+  padding-bottom: 21.5px;
+  padding-top: 21.5px;
+}
+
+@media (min-width: 1600px) {
+  .p-col-6 {
+    flex: 0 0 auto !important;
+    padding: $gutter !important;
+    width: 50% !important;
+  }
+
+  .p-ml-4 {
+    margin-left: 1.5rem !important;
+  }
+}
+

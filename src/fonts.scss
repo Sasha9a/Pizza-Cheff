@@ -7,3 +7,8 @@
   font-family: "MullerRegular";
   src: local("MullerRegular"), url(./assets/fonts/MullerRegular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "MullerExtraBold";
+  src: local("MullerExtraBold"), url(./assets/fonts/MullerExtraBold.ttf) format("truetype");
+}

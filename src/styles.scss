@@ -12,3 +12,19 @@ p {
 a {
   text-decoration: none;
 }
+
+.img-adaptive {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.button-color {
+  background-color: #ffaf18;
+
+  .button-text {
+    font-size: 16px;
+    font-family: "MullerBold", sans-serif;
+    color: rgb(56, 36, 0);
+    font-weight: bold;
+  }
+}
