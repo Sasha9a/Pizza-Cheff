@@ -1,0 +1,9 @@
+<div class="mt-150px text-center">
+  <p id="header_catalog" class="header-catalog">Выберите свою любимую пиццу</p>
+
+  <div class="mt-6">
+    <div class="grid">
+      <app-item-card *ngFor="let p of pizza" [pizza]="p" class="xl:col-3 md:col-6 col-12 p-11px"></app-item-card>
+    </div>
+  </div>
+</div>

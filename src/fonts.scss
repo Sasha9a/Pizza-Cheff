@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: "MullerBold";
+  src: local("MullerBold"), url(./assets/fonts/MullerBold.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "MullerExtraBold";
   src: local("MullerExtraBold"), url(./assets/fonts/MullerExtraBold.ttf) format("truetype");
 }

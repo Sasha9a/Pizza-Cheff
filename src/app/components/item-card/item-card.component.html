@@ -1,0 +1,18 @@
+<div class="p-card">
+  <div class="p-content-card">
+    <div class="p-content-info">
+      <div class="p-img">
+        <img [src]="pizza.imgSrc" [alt]="pizza.name" class="img-adaptive" />
+      </div>
+
+      <div class="mt-3 mb-7">
+        <p class="p-name">{{ pizza.name }}</p>
+        <p class="p-description mt-2">{{ pizza.description }}</p>
+      </div>
+
+      <button class="button-color py-button w-full cursor-pointer">
+        <span class="button-text">В корзину</span>
+      </button>
+    </div>
+  </div>
+</div>

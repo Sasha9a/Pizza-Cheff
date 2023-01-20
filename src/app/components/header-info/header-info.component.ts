@@ -9,4 +9,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./header-info.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeaderInfoComponent {}
+export class HeaderInfoComponent {
+  public scrollToHeaderCatalog() {
+    const elementHeaderCatalog = document.getElementById('header_catalog');
+    if (elementHeaderCatalog) {
+      window.scrollTo({
+        top: elementHeaderCatalog.getBoundingClientRect().top + window.scrollY - 120,
+        behavior: 'smooth'
+      });
+    }
+  }
+}

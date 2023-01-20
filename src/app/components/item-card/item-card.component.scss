@@ -1,0 +1,39 @@
+.p-card {
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.02), 0 1px 4px 4px rgba(0, 0, 0, 0.03);
+  height: 100%;
+
+  .p-content-card {
+    padding: 1.5rem 1.2rem 0.8rem 1.2rem;
+    height: 100%;
+    box-sizing: border-box;
+
+    .p-content-info {
+      height: 100%;
+      position: relative;
+
+      .p-img {
+        height: 150px;
+      }
+
+      .p-name {
+        font-size: 18px;
+        font-family: "MullerBold", sans-serif;
+        color: rgb(56, 36, 0);
+      }
+
+      .p-description {
+        font-size: 14px;
+        font-family: "MullerRegular", sans-serif;
+        color: rgb(24, 26, 26);
+      }
+
+      .py-button {
+        padding-bottom: 17px;
+        padding-top: 17px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
