@@ -1,0 +1,82 @@
+<div class="mt-200px mb-8">
+  <div class="grid">
+    <div class="xl:col-4 md:col-6 col-12">
+      <p class="header-text-delivery">Хватит думать!</p>
+      <p class="header-text-delivery-1">Доставим заказ за 30 минут!</p>
+
+      <p class="description-text-delivery mt-8">
+        Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь
+        заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не
+        остался голодный!
+      </p>
+    </div>
+
+    <div class="xl:col-4 md:col-6 col-12">
+      <form [formGroup]="deliveryForm" (ngSubmit)="addOrder()">
+        <div class="p-fluid md:pl-6 pt-6">
+          <div class="field mb-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+              class="delivery-input"
+              formControlName="name"
+              [class.input-error]="isInvalidFieldForm('name') | async"
+            />
+            <small *ngIf="isInvalidFieldForm('name') | async" class="text-red-500">Введите имя</small>
+          </div>
+
+          <div class="field mb-4">
+            <input
+              type="text"
+              name="address"
+              placeholder="Адрес доставки"
+              class="delivery-input"
+              formControlName="address"
+              [class.input-error]="isInvalidFieldForm('address') | async"
+            />
+            <small *ngIf="isInvalidFieldForm('address') | async" class="text-red-500">Введите адрес доставки</small>
+          </div>
+
+          <div class="field mb-4">
+            <input
+              type="text"
+              name="phone"
+              placeholder="Телефон"
+              class="delivery-input"
+              formControlName="phone"
+              [class.input-error]="isInvalidFieldForm('phone') | async"
+            />
+            <small *ngIf="isInvalidFieldForm('phone') | async" class="text-red-500">Введите телефон</small>
+          </div>
+
+          <div class="field mb-5">
+            <button type="submit" class="button-color px-6 py-button cursor-pointer w-full">
+              <span class="button-text">Оформить заказ</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="xl:col-4 col-12">
+      <div class="m-delivery-img">
+        <div class="flex xl:justify-content-end justify-content-center">
+          <img src="assets/delivery_pizza.png" alt="delivery_pizza" class="img-adaptive" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isShowPopup" class="popup-success">
+  <div class="flex align-items-center justify-content-center h-full">
+    <div class="bg-white border-round-xl p-4">
+      <p class="popup-text">Спасибо за заказ</p>
+
+      <button class="button-color popup-py-button w-full cursor-pointer mt-3" (click)="isShowPopup = false">
+        <span class="button-text">Закрыть</span>
+      </button>
+    </div>
+  </div>
+</div>

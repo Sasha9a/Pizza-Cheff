@@ -1,0 +1,78 @@
+.mt-200px {
+  margin-top: 200px;
+}
+
+.header-text-delivery {
+  font-size: 35px;
+  font-family: "MullerExtraBold", sans-serif;
+  color: rgb(255, 175, 24);
+  line-height: 1.286;
+}
+
+.header-text-delivery-1 {
+  font-size: 35px;
+  font-family: "MullerExtraBold", sans-serif;
+  color: #b99150;
+  line-height: 1.286;
+}
+
+.description-text-delivery {
+  font-size: 16px;
+  font-family: "MullerRegular", sans-serif;
+  color: rgb(185, 145, 80);
+  line-height: 1.5;
+}
+
+.delivery-input {
+  font-size: 18px;
+  padding: 1.1rem 1.3rem;
+  width: 100%;
+  border: 2px solid #b99150 !important;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(203, 168, 110);
+  }
+}
+
+.py-button {
+  padding-bottom: 21.5px;
+  padding-top: 21.5px;
+}
+
+@media (min-width: 1200px) {
+  .m-delivery-img {
+    margin-right: -100px;
+    margin-top: -50px
+  }
+}
+
+.input-error {
+  border-color: red !important;
+}
+
+.popup-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+
+}
+
+.popup-text {
+  font-size: 18px;
+  font-family: "MullerBold", sans-serif;
+  color: rgb(56, 36, 0);
+}
+
+.popup-py-button {
+  padding-bottom: 17px;
+  padding-top: 17px;
+}
