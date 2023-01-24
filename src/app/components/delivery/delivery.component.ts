@@ -35,6 +35,8 @@ export class DeliveryComponent {
           this.cdRef.markForCheck();
         }
       });
+    } else {
+      this.deliveryForm.markAllAsTouched();
     }
   }
 
